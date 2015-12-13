@@ -1,0 +1,43 @@
+.main-header{
+    position: relative;
+    text-align: center;
+    height: 560px;
+    color: #fff;
+    background-size: 100% 100%;
+    background: url('/assets/images/bar.jpg') no-repeat fixed center;
+    border-bottom: none;
+    margin-top: -20px;
+}
+.text{
+    margin: 150px 0 0 0;
+}
+.redoverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49, 51, 53, 0.75);
+    position: relative;
+}
+
+#searchbox{
+
+}
+.results{
+    padding: 40px 0;
+    color:#7C7D7E;
+    background-color: #252E30;
+}
+.box{
+    width:100%;
+    background-color: #191F21;
+    border-radius: 5px;
+    margin:10px 0;
+    padding:5px 0;
+}
+.box img{
+    width:10%;
+    margin: 5px 10px;
+}
+.mbtn{
+    background: #181E20;
+    border: 0px;
+}

@@ -1,0 +1,44 @@
+<navbar></navbar>
+
+<header class="main-header">
+    <div class="redoverlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="text">
+                        <h1>Nightlife Coordination App</h1>
+
+                        <h3>See which bars are hoppin' tonight and RSVP ahead of time! Remember: take a cab and drink
+                            responsibly.</h3>
+                    </div>
+                    <br>
+
+                    <div class="input-group" id="searchbox">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search fa-lg"></i></span>
+                        <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon1"
+                               ng-model="location">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="results">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Bars in {{location}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 box" ng-repeat="bar in bars">
+                    <img ng-src="{{bar.image_url}}" class="pull-left img-responsive">
+                    <span><h4>{{bar.name}} - {{bar.rating}}</h4>
+                    {{bar.snippet_text}}<br></span>
+                <a href="#" class="btn btn-default">I'm going</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer></footer>
