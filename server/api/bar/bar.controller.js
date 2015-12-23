@@ -82,7 +82,7 @@ function barjson(data){
 
 // Gets a list of bars from location
 exports.getbars = function(req, res) {
-  console.log(req.params.location);
+  //console.log(req.params.location);
   client.search({
     category_filter:'bars',
     location: req.params.location
@@ -90,7 +90,7 @@ exports.getbars = function(req, res) {
     //.then(responseWithResult(res))
     .then(function(data){
       var resbars = _.map(data.businesses, barjson);
-      console.log(data.businesses);
+      //console.log(data.businesses);
       return res.status(200).json(resbars);
       //responseWithResult(data);
     }
@@ -125,7 +125,7 @@ exports.update = function(req, res) {
   if (req.body._id) {
     delete req.body._id;
   }
-  console.log(req);
+  //console.log(req);
   Bar.findByIdAsync(req.params.id)
     .then(handleEntityNotFound(res))
     .then(saveUpdates(req.body))
